@@ -1,0 +1,16 @@
+.container {
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container div {
+    width: 100px;
+    /* height: 100px; */
+    margin: 10px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 32px;
+    background-color: red;
+}

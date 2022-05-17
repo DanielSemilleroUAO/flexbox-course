@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefina Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+h1  {
+  margin: 40px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section {
+  width: 50%;
+  padding: 0 5%;
+  word-spacing: 16px;
+  border: 1px solid blue;
+}
+
+.image-section {
+  width: 50%;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.image-section img {
+  padding: 0 5%;
+  width: 450px;
+}
+
+/* Media Queries */
+
+/* Desktop and lapto (1024) */
+@media (min-width: 1024px) {
+  .text-section {
+    color: forestgreen;
+    background-color: beige;
+  }
+}
+
+/* Tablets and ipads (780 to 1023) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .text-section {
+    text-transform: lowercase;
+  }
+  body{
+      background-color: blue;
+  }
+}
+
+/* Mobile and smart phone (469 to 768) */
+@media (max-width: 768px) {
+  h1 {
+    color: blue;
+  }
+  .container {
+    display: block;
+  }
+  .text-section {
+    width: 100%;
+  }
+  .image-section {
+    width: 100%;
+  }
+  .image-section .img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* Small Phones (0 468) */
+@media (max-width: 468px) {
+  .image-section img {
+    padding: 16px;
+  }
+  h1 {
+    color: orange;
+    font-size: 20px;
+  }
+}
